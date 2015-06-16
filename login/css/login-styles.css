@@ -1,0 +1,212 @@
+ @font-face{
+    font-family:'GothamLight';
+    src:url('../../assets/fonts/Gotham-Light.eot') format('embedded-opentype'),
+        url('../../assets/fonts/Gotham-Light.woff') format('woff'),
+        url('../../assets/fonts/Gotham-Light.ttf') format('truetype'),
+        url('../../assets/fonts/Gotham-Light.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+ @font-face{
+    font-family:'GothamMedium';
+    src:url('../../assets/fonts/Gotham-Medium.eot') format('embedded-opentype'),
+        url('../../assets/fonts/Gotham-Medium.woff') format('woff'),
+        url('../../assets/fonts/Gotham-Medium.ttf') format('truetype'),
+        url('../../assets/fonts/Gotham-Medium.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+ @font-face{
+    font-family:'GothamBold';
+    src:url('../../assets/fonts/Gotham-Bold.eot') format('embedded-opentype'),
+        url('../../assets/fonts/Gotham-Bold.woff') format('woff'),
+        url('../../assets/fonts/Gotham-Bold.ttf') format('truetype'),
+        url('../../assets/fonts/Gotham-Bold.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../../assets/fonts/icomoon.eot?-85fprl');
+    src:url('../../assets/fonts/icomoon.eot?#iefix-85fprl') format('embedded-opentype'),
+        url('../../assets/fonts/icomoon.woff?-85fprl') format('woff'),
+        url('../../assets/fonts/icomoon.ttf?-85fprl') format('truetype'),
+        url('../../assets/fonts/icomoon.svg?-85fprl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.login {
+    width: 100%;
+    height: 100%;
+    background: url(../img/login-bg.jpg) no-repeat center / cover;
+    position: relative;
+}
+
+#login {
+    margin: auto;
+    padding: 8% 0 0;
+    width: 400px;
+}
+
+.login h1 a {
+	text-align: center;
+    position: relative; 
+
+	background-image: url('../img/logo-svg.svg');
+	background-size: 90px 50px;
+	width: 90px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.login form {
+	background: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+#login form p {
+	margin-bottom: 20px;
+}
+
+.login label {
+    color: #fff; 
+    font-family:'GothamMedium', sans-serif;
+    font-weight: normal;
+    font-size: 16px;    
+    cursor: pointer;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+
+    background-color: #fff;
+    background-image: none;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    width: 100%;
+    margin: 10px 0 0;
+
+    transition: border-color 0.15s ease-in-out;
+    -moz-transition: border-color 0.15s ease-in-out;
+    -webkit-transition: border-color 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out;
+    -ms-transition: border-color 0.15s ease-in-out;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border: 1px solid #ec6225;
+}
+
+.login .button-primary {
+    background: #ec6225;
+    border: 1px solid #ec6225;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    font-family: "GothamBold",sans-serif;
+    font-size: 18px;
+    padding: 20px 15px !important;
+    text-transform: uppercase;
+    width: 100%;
+    float: none;
+    box-shadow: none !important;
+    height: auto !important;	
+    line-height: 1 !important;
+    margin-top: 30px;
+    position: relative;
+
+    transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+}
+
+
+.login .button-primary:hover,
+.login .button-primary:focus {
+    background: #fff;
+    border: 1px solid #ec6225;
+    color: #ec6225;
+    box-shadow: none !important;
+}
+
+.login .submit {
+	position: relative;
+}
+
+.login .submit:after {
+	content: "\e608";
+    font-family: 'icomoon';
+    speak: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+
+    right: 145px;
+    line-height: 1;
+    position: absolute;
+    top: 23px;
+    color: #fff;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: 14px;
+    z-index: 9999;
+
+    transition: color 0.15s ease-in-out;
+    -moz-transition: color 0.15s ease-in-out;
+    -webkit-transition: color 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out;
+    -ms-transition: color 0.15s ease-in-out;
+}
+
+.login .submit:hover:after {
+	color: #ec6225;
+}
+
+.login > a,
+.login form .forgetmenot,
+.login #backtoblog, 
+.login #nav {
+	display: none;
+}
+
+
+/* Max to landscape phone */
+@media all and (max-width: 767px) {
+    .login h1 a {
+        background-size: 60px 35px;
+        height: 35px;
+        width: 60px;
+    }
+
+    #login {
+        width: 290px;
+    }
+
+    .login .submit:after {
+        font-size: 12px;
+        right: 100px;
+        top: 22px;
+    }
+
+}
