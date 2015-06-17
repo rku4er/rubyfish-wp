@@ -21,8 +21,6 @@
         // JavaScript to be fired on all pages
         var open = false;
 
-        var articles = [];
-
         function Article(articleNode)
         {
             var thisObj = this;
@@ -68,7 +66,6 @@
                 }
             });
 
-            articles.push(this);
         }
 
 

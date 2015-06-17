@@ -2,8 +2,7 @@
  * C O N T E N T
  * =====================================================================
  *
- *  # CUSTOM RESETS
- *  # LAYOUT
+ *  # MODAL
  *  # HEADER
  *  # HERO IMAGE 
  *  # CONTENT
@@ -12,96 +11,6 @@
  *
  * ======================================================================
  */
-
-[class*="icon-"],
-[class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-variant: normal;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.icon-plus:before {
-    content: "\e600";
-}
-.icon-arrow-down:before {
-    content: "\e601";
-}
-.icon-menu:before {
-    content: "\e602";
-}
-.icon-cross:before {
-    content: "\e603";
-}
-.icon-linkedin:before {
-    content: "\e604";
-}
-.icon-checkmark:before {
-    content: "\e605";
-}
-.icon-stop:before {
-    content: "\e606";
-}
-.icon-arrow-right:before {
-    content: "\e608";
-}
-.icon-arrow-down2:before {
-    content: "\e609";
-}
-.icon-arrow-left:before {
-    content: "\e60a";
-}
-
-
-/* CUSTOM RESETS
-================================================== */
-a {
-    transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    -ms-transition: all 0.15s ease-in-out;
-}
-
-a:focus,
-a:hover {
-    outline: 0 none;
-    text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #333;
-}
-
-.text-bold {
-    font-family:'GothamBold', sans-serif;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
-/* LAYOUT
-================================================== */
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family:'GothamLight', sans-serif;
-    color: #666;
-}
-
-body {
-    height: 100% !important;
-}
 
 /* modal */
 .modal {
@@ -521,21 +430,7 @@ svg.svg-logo {
 .hero-text h2 span {
     font-family: 'GothamBold', sans-serif
 }
-/*
-#scroll-to-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    margin: auto;
-    text-align: center;
-    z-index: 3;
-}
 
-#scroll-to-content a {
-    cursor: pointer;
-}
-*/
 #scroll-to-content {
     position: absolute;
     left: 0;
@@ -793,22 +688,13 @@ svg.svg-logo {
     color: #000;
 }
 
-.post-padding,
-.entry-content p,
-.entry-summary {
-    font-size: 15px;
-    line-height: 26px;
-    margin: 0;
-}
-
 .post-padding a {
-    color: #ec6225;
-    cursor: pointer;
+    /*color: #ec6225;*/
 }
 
 .post-padding a:hover,
 .post-padding a:focus {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .entry-author {
@@ -1056,7 +942,7 @@ svg.svg-logo {
 }
 
 .entry-content img {
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
 }
 
 .like-post-cnt {
@@ -1375,14 +1261,6 @@ div.wpcf7-mail-sent-ok p span {
     padding: 15px 60px;
     width: auto;
     clear: both;
-}
-
-
-/* Overwrited bootstrap styles */
-.list-group-item {
-    border: 0 none;
-    padding: 0 0 0 22px;
-    margin: 0;
 }
 
 
@@ -1940,7 +1818,8 @@ div.wpcf7-mail-sent-ok p span {
         padding: 0 25px;
     }
 
-    .modal-content-padding, .post-padding {
+    .modal-content-padding, 
+    .post-padding {
         padding: 0 25px 25px;
     }
 

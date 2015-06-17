@@ -76,36 +76,58 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
  * Work Post Type
  */
 function roots_post_type_works() {
-  $labels = array(
-    'name' => __( 'Works'),
-    'singular_name' => __( 'Work' ),
-    'add_new' => _x('Add New', 'rubyfish'),
-    'add_new_item' => __('Add New Work'),
-    'edit_item' => __('Edit Work'),
-    'new_item' => __('New Work'),
-    'view_item' => __('View Work'),
-    'search_items' => __('Search Work'),
-    'not_found' =>  __('No works found'),
-    'not_found_in_trash' => __('No works found in Trash'),
-    'parent_item_colon' => ''
+
+  register_post_type( 'project',
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Project' ),
+        'add_new' => __( 'Add Project' ),
+        'add_new_item' => __( 'Add New Project' ),
+      ),
+      'rewrite' => array('slug' => __( 'project' )),
+      'public' => true,
+      'exclude_from_search' => false,
+      'hierarchical' => false,
+      'has_archive' => false,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumbnail',
+        'revisions'
+      ),
+      'can_export' => true
+    )
   );
 
-  $args = array(
-    'labels' => $labels,
-    'public' => true,
-    'exclude_from_search' => true,
-    'publicly_queryable' => true,
-    'rewrite' => array('slug' => __( 'work' )),
-    'show_ui' => true,
-    'query_var' => true,
-    'capability_type' => 'post',
-    'hierarchical' => false,
-    'menu_position' => null,
-    'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt', 'comments'),
-    'taxonomies' => array('category', 'post_tag')
+  register_post_type( 'work',
+    array(
+      'labels' => array(
+        'name' => __( 'Works' ),
+        'singular_name' => __( 'Work' ),
+        'add_new' => __( 'Add Work' ),
+        'add_new_item' => __( 'Add New Work' ),
+      ),
+      'rewrite' => array('slug' => __( 'work' )),
+      'public' => true,
+      'exclude_from_search' => false,
+      'hierarchical' => false,
+      'has_archive' => false,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumbnail',
+        'revisions'
+      ),
+      'can_export' => true
+    )
   );
 
-  register_post_type(__( 'work' ), $args);
+
 }
 
 add_action( 'init', __NAMESPACE__ . '\\roots_post_type_works' );

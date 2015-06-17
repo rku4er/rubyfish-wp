@@ -17,8 +17,8 @@
                     <?php the_tags('','',''); ?>
                 </div>
 
-              <h1 class="entry-title"><?php the_title(); ?></h1>
-              <?php the_content(); ?>
+              <h1 class="entry-title"><?php echo __('Project', 'sage') . '&nbsp;' . get_the_title(); ?></h1>
+              <div class="post-padding"><?php the_content(); ?></div>
 
               <div class="like-post-cnt">
 
@@ -45,7 +45,7 @@
 
 
               <?php
-              $prev = Utils\mod_get_adjacent_post('prev', array('work'));
+              $prev = Utils\mod_get_adjacent_post('prev', array('project'));
 
               if( $prev ) {
 

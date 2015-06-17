@@ -1,0 +1,46 @@
+/*Custom icons*/
+[class*="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-plus:before {
+    content: "\e600";
+}
+.icon-arrow-down:before {
+    content: "\e601";
+}
+.icon-menu:before {
+    content: "\e602";
+}
+.icon-cross:before {
+    content: "\e603";
+}
+.icon-linkedin:before {
+    content: "\e604";
+}
+.icon-checkmark:before {
+    content: "\e605";
+}
+.icon-stop:before {
+    content: "\e606";
+}
+.icon-arrow-right:before {
+    content: "\e608";
+}
+.icon-arrow-down2:before {
+    content: "\e609";
+}
+.icon-arrow-left:before {
+    content: "\e60a";
+}
+
