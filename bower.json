@@ -10,13 +10,18 @@
     "modernizr": "2.8.2",
     "bootstrap-sass-official": "3.3.5",
     "bootstrap-hover-dropdown": "CWSpear/bootstrap-hover-dropdown#~2.1.3",
-    "skrollr": "Prinzhorn/skrollr#0.6.29"
+    "skrollr": "Prinzhorn/skrollr#0.6.29",
+    "respond": "~1.4.2"
   },
   "overrides": {
     "modernizr": {
       "main": "./modernizr.js"
     },
-    "bootstrap": { "ignore": [ "./dist/js/bootstrap.js" ] },
+    "bootstrap": {
+      "ignore": [
+        "./dist/js/bootstrap.js"
+      ]
+    },
     "bootstrap-sass-official": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",

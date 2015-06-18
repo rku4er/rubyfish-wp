@@ -6,7 +6,8 @@
       ],
       "vendor": [
         "../bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
-        "../bower_components/skrollr/dist/skrollr.min.js"
+        "../bower_components/skrollr/dist/skrollr.min.js",
+        "../bower_components/respond/dest/respond.min.js"
       ],
       "main": true
     },

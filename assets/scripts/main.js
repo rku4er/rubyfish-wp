@@ -83,15 +83,14 @@
 
 
         // Add data attr to main nav <li>
-        if( !$('body').hasClass('single') ) {
+        //if( !$('body').hasClass('single') ) {
 
             $('.main-nav a').attr({
                 'data-anchor-target': '.hero-bg',
                 'data-top': 'color: rgba(255,255,255,1);',
                 'data-70-top-bottom': 'color: rgba(0,0,0,1);'
             });
-
-        }
+        //}
 
 
         // Open contact modal
